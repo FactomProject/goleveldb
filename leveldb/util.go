@@ -9,7 +9,7 @@ package leveldb
 import (
 	"sort"
 
-	"github.com/syndtr/goleveldb/leveldb/storage"
+	"github.com/conformal/goleveldb/leveldb/storage"
 )
 
 func shorten(str string) string {

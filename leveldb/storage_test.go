@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syndtr/goleveldb/leveldb/storage"
+	"github.com/conformal/goleveldb/leveldb/storage"
 )
 
 var errFileOpen = errors.New("file opened concurrently")
