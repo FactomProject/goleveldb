@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/syndtr/goleveldb/leveldb/iterator"
-	"github.com/syndtr/goleveldb/leveldb/opt"
+	"github.com/conformal/goleveldb/leveldb/iterator"
+	"github.com/conformal/goleveldb/leveldb/opt"
 )
 
 type snapshotElement struct {
