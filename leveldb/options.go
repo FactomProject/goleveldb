@@ -9,10 +9,10 @@ package leveldb
 import (
 	"sync"
 
-	"github.com/syndtr/goleveldb/leveldb/cache"
-	"github.com/syndtr/goleveldb/leveldb/comparer"
-	"github.com/syndtr/goleveldb/leveldb/filter"
-	"github.com/syndtr/goleveldb/leveldb/opt"
+	"github.com/conformal/goleveldb/leveldb/cache"
+	"github.com/conformal/goleveldb/leveldb/comparer"
+	"github.com/conformal/goleveldb/leveldb/filter"
+	"github.com/conformal/goleveldb/leveldb/opt"
 )
 
 type iOptions struct {
