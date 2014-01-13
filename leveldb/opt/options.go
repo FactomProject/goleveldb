@@ -8,8 +8,6 @@
 package opt
 
 import (
-	"errors"
-	"sync"
 	"github.com/conformal/goleveldb/leveldb/cache"
 	"github.com/conformal/goleveldb/leveldb/comparer"
 	"github.com/conformal/goleveldb/leveldb/filter"
