@@ -13,6 +13,7 @@ import (
 	"runtime"
 	"strings"
 	"testing"
+
 	"github.com/conformal/goleveldb/leveldb/comparer"
 	"github.com/conformal/goleveldb/leveldb/iterator"
 	"github.com/conformal/goleveldb/leveldb/memdb"
