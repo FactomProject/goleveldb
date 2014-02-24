@@ -10,13 +10,14 @@ import (
 	"github.com/conformal/goleveldb/leveldb/iterator"
 	"github.com/conformal/goleveldb/leveldb/opt"
 	"github.com/conformal/goleveldb/leveldb/storage"
+	"github.com/conformal/goleveldb/leveldb/util"
 )
 
 // Reader is the interface that wraps basic Get and NewIterator methods.
 // This interface implemented by both DB and Snapshot.
 type Reader interface {
 	Get(key []byte, ro *opt.ReadOptions) (value []byte, err error)
-	NewIterator(ro *opt.ReadOptions) iterator.Iterator
+	NewIterator(slice *util.Range, ro *opt.ReadOptions) iterator.Iterator
 }
 
 type Sizes []uint64
