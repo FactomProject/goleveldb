@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/syndtr/goleveldb/leveldb/testutil"
+	"github.com/conformal/goleveldb/leveldb/testutil"
 )
 
 func TestLeveldb(t *testing.T) {
