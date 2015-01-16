@@ -10,12 +10,12 @@ import (
 	"sort"
 	"sync/atomic"
 
-	"github.com/conformal/goleveldb/leveldb/cache"
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/storage"
-	"github.com/conformal/goleveldb/leveldb/table"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/cache"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/storage"
+	"github.com/FactomProject/goleveldb/leveldb/table"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 // tFile holds basic information about a table.

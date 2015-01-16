@@ -11,7 +11,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 const typeShift = 3

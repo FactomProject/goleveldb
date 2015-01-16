@@ -13,11 +13,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/journal"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/storage"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/journal"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/storage"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 // session represent a persistent database session.

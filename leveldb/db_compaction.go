@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/conformal/goleveldb/leveldb/memdb"
+	"github.com/FactomProject/goleveldb/leveldb/memdb"
 )
 
 var (

@@ -16,12 +16,12 @@ import (
 
 	"code.google.com/p/snappy-go/snappy"
 
-	"github.com/conformal/goleveldb/leveldb/cache"
-	"github.com/conformal/goleveldb/leveldb/comparer"
-	"github.com/conformal/goleveldb/leveldb/filter"
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/cache"
+	"github.com/FactomProject/goleveldb/leveldb/comparer"
+	"github.com/FactomProject/goleveldb/leveldb/filter"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 var (

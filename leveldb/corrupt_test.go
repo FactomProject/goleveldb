@@ -13,9 +13,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/conformal/goleveldb/leveldb/cache"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/storage"
+	"github.com/FactomProject/goleveldb/leveldb/cache"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/storage"
 )
 
 const ctValSize = 1000

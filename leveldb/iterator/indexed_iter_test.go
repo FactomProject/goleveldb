@@ -11,9 +11,9 @@ import (
 
 	. "github.com/onsi/ginkgo"
 
-	"github.com/conformal/goleveldb/leveldb/comparer"
-	. "github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/testutil"
+	"github.com/FactomProject/goleveldb/leveldb/comparer"
+	. "github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/testutil"
 )
 
 type keyValue struct {

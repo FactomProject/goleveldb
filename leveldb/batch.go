@@ -10,7 +10,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/conformal/goleveldb/leveldb/memdb"
+	"github.com/FactomProject/goleveldb/leveldb/memdb"
 )
 
 var (

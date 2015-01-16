@@ -11,9 +11,9 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 var levelMaxSize [kNumLevels]float64

@@ -7,9 +7,9 @@
 package leveldb
 
 import (
-	"github.com/conformal/goleveldb/leveldb/cache"
-	"github.com/conformal/goleveldb/leveldb/filter"
-	"github.com/conformal/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/cache"
+	"github.com/FactomProject/goleveldb/leveldb/filter"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
 )
 
 func (s *session) setOptions(o *opt.Options) {

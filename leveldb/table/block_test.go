@@ -13,10 +13,10 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/conformal/goleveldb/leveldb/comparer"
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/testutil"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/comparer"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/testutil"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 func (b *block) TestNewIterator(slice *util.Range) iterator.Iterator {

@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 type FileType uint32

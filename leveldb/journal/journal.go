@@ -83,7 +83,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 // These constants are part of the wire format and should not be changed.

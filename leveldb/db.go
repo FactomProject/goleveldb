@@ -16,13 +16,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/journal"
-	"github.com/conformal/goleveldb/leveldb/memdb"
-	"github.com/conformal/goleveldb/leveldb/opt"
-	"github.com/conformal/goleveldb/leveldb/storage"
-	"github.com/conformal/goleveldb/leveldb/table"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/journal"
+	"github.com/FactomProject/goleveldb/leveldb/memdb"
+	"github.com/FactomProject/goleveldb/leveldb/opt"
+	"github.com/FactomProject/goleveldb/leveldb/storage"
+	"github.com/FactomProject/goleveldb/leveldb/table"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 // DB is a LevelDB database.

@@ -12,8 +12,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/conformal/goleveldb/leveldb/iterator"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/iterator"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 type DB interface{}

@@ -9,8 +9,8 @@ package leveldb
 import (
 	"sync/atomic"
 
-	"github.com/conformal/goleveldb/leveldb/journal"
-	"github.com/conformal/goleveldb/leveldb/memdb"
+	"github.com/FactomProject/goleveldb/leveldb/journal"
+	"github.com/FactomProject/goleveldb/leveldb/memdb"
 )
 
 // Get latest sequence number.

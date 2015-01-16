@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 var errFileOpen = errors.New("leveldb/storage: file still open")

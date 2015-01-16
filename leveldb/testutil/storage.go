@@ -18,8 +18,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/conformal/goleveldb/leveldb/storage"
-	"github.com/conformal/goleveldb/leveldb/util"
+	"github.com/FactomProject/goleveldb/leveldb/storage"
+	"github.com/FactomProject/goleveldb/leveldb/util"
 )
 
 var (

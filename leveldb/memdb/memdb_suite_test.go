@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/conformal/goleveldb/leveldb/testutil"
+	"github.com/FactomProject/goleveldb/leveldb/testutil"
 )
 
 func TestMemdb(t *testing.T) {
