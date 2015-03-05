@@ -1,11 +1,15 @@
 This is an implementation of the [LevelDB key/value database](http:code.google.com/p/leveldb) in the [Go programming language](http:golang.org).
 
-[![Build Status](https://travis-ci.org/syndtr/goleveldb.png?branch=master)](https://travis-ci.org/syndtr/goleveldb)
+[![Build Status](https://travis-ci.org/btcsuite/goleveldb.png?branch=master)](https://travis-ci.org/btcsuite/goleveldb)
+
+**NOTE:** This is a fork/vendoring of https://github.com/syndtr/goleveldb
+The following documentation has been modified to point at this fork for
+convenience.
 
 Installation
 -----------
 
-	go get github.com/syndtr/goleveldb/leveldb
+	go get github.com/btcsuite/goleveldb/leveldb
 
 Requirements
 -----------
@@ -68,6 +72,17 @@ Iterate over subset of database content:
 	err = iter.Error()
 	...
 
+Iterate over subset of database content with a particular prefix:
+
+	iter := db.NewIterator(util.BytesPrefix([]byte("foo-")), nil)
+	for iter.Next() {
+		// Use key/value.
+		...
+	}
+	iter.Release()
+	err = iter.Error()
+	...
+
 Batch writes:
 
 	batch := new(leveldb.Batch)
@@ -90,4 +105,4 @@ Use bloom filter:
 Documentation
 -----------
 
-You can read package documentation [here](http:godoc.org/github.com/syndtr/goleveldb).
+You can read package documentation [here](http:godoc.org/github.com/btcsuite/goleveldb).

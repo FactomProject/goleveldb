@@ -1,10 +1,4 @@
-// Copyright (c) 2012, Suryandaru Triandana <syndtr@gmail.com>
-// All rights reserved.
-//
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-package leveldb
+package main
 
 import (
 	"encoding/binary"
@@ -106,7 +100,7 @@ func (ik iKey) assert() {
 		panic("leveldb: nil iKey")
 	}
 	if len(ik) < 8 {
-		panic(fmt.Sprintf("leveldb: iKey %q, len=%d: invalid length", []byte(ik), len(ik)))
+		panic(fmt.Sprintf("leveldb: iKey %q, len=%d: invalid length", ik, len(ik)))
 	}
 }
 
@@ -124,7 +118,7 @@ func (ik iKey) parseNum() (seq uint64, kt kType) {
 	num := ik.num()
 	seq, kt = uint64(num>>8), kType(num&0xff)
 	if kt > ktVal {
-		panic(fmt.Sprintf("leveldb: iKey %q, len=%d: invalid type %#x", []byte(ik), len(ik), kt))
+		panic(fmt.Sprintf("leveldb: iKey %q, len=%d: invalid type %#x", ik, len(ik), kt))
 	}
 	return
 }
@@ -135,7 +129,7 @@ func (ik iKey) String() string {
 	}
 
 	if ukey, seq, kt, err := parseIkey(ik); err == nil {
-		return fmt.Sprintf("%s,%s%d", shorten(string(ukey)), kt, seq)
+		return fmt.Sprintf("%x,%s%d", ukey, kt, seq)
 	} else {
 		return "<invalid>"
 	}
