@@ -16,3 +16,4 @@ var (
 	ErrIterReleased     = errors.New("leveldb: iterator released")
 	ErrClosed           = errors.New("leveldb: closed")
 )
+ 

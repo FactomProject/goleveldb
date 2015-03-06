@@ -14,7 +14,7 @@ import (
 	"github.com/FactomProject/goleveldb/leveldb/storage"
 	"github.com/FactomProject/goleveldb/leveldb/util"
 )
-
+ 
 var (
 	ErrNotFound    = New("leveldb: not found")
 	ErrReleased    = util.ErrReleased
