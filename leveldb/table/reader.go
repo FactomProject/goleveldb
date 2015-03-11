@@ -22,7 +22,7 @@ import (
 	"github.com/FactomProject/goleveldb/leveldb/opt"
 	"github.com/FactomProject/goleveldb/leveldb/storage"
 	"github.com/FactomProject/goleveldb/leveldb/util"
-	"github.com/btcsuite/snappy-go/snappy"
+	"github.com/FactomProject/snappy-go/snappy"
 )
 
 var (

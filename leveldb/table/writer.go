@@ -16,7 +16,7 @@ import (
 	"github.com/FactomProject/goleveldb/leveldb/filter"
 	"github.com/FactomProject/goleveldb/leveldb/opt"
 	"github.com/FactomProject/goleveldb/leveldb/util"
-	"github.com/btcsuite/snappy-go/snappy"
+	"github.com/FactomProject/snappy-go/snappy"
 )
 
 func sharedPrefixLen(a, b []byte) int {
