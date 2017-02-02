@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/golang/snappy"
+	snappy "github.com/FactomProject/snappy-go"
 
 	"github.com/FactomProject/goleveldb/leveldb/comparer"
 	"github.com/FactomProject/goleveldb/leveldb/filter"
