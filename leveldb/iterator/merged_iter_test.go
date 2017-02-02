@@ -10,9 +10,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/FactomProject/goleveldb/leveldb/comparer"
-	. "github.com/FactomProject/goleveldb/leveldb/iterator"
-	"github.com/FactomProject/goleveldb/leveldb/testutil"
+	"github.com/syndtr/goleveldb/leveldb/comparer"
+	. "github.com/syndtr/goleveldb/leveldb/iterator"
+	"github.com/syndtr/goleveldb/leveldb/testutil"
 )
 
 var _ = testutil.Defer(func() {
@@ -24,7 +24,7 @@ var _ = testutil.Defer(func() {
 
 					// Build key/value.
 					filledKV := make([]testutil.KeyValue, filled)
-					kv := testutil.KeyValue_Generate(nil, 100, 1, 10, 4, 4)
+					kv := testutil.KeyValue_Generate(nil, 100, 1, 1, 10, 4, 4)
 					kv.Iterate(func(i int, key, value []byte) {
 						filledKV[rnd.Intn(filled)].Put(key, value)
 					})
@@ -49,7 +49,7 @@ var _ = testutil.Defer(func() {
 					}
 					testutil.DoIteratorTesting(&t)
 					done <- true
-				}, 1.5)
+				}, 15.0)
 			}
 		}
 

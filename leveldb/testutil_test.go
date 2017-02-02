@@ -9,10 +9,10 @@ package leveldb
 import (
 	. "github.com/onsi/gomega"
 
-	"github.com/FactomProject/goleveldb/leveldb/iterator"
-	"github.com/FactomProject/goleveldb/leveldb/opt"
-	"github.com/FactomProject/goleveldb/leveldb/testutil"
-	"github.com/FactomProject/goleveldb/leveldb/util"
+	"github.com/syndtr/goleveldb/leveldb/iterator"
+	"github.com/syndtr/goleveldb/leveldb/opt"
+	"github.com/syndtr/goleveldb/leveldb/testutil"
+	"github.com/syndtr/goleveldb/leveldb/util"
 )
 
 type testingDB struct {
@@ -61,3 +61,31 @@ func newTestingDB(o *opt.Options, ro *opt.ReadOptions, wo *opt.WriteOptions) *te
 		stor: stor,
 	}
 }
+
+type testingTransaction struct {
+	*Transaction
+	ro *opt.ReadOptions
+	wo *opt.WriteOptions
+}
+
+func (t *testingTransaction) TestPut(key []byte, value []byte) error {
+	return t.Put(key, value, t.wo)
+}
+
+func (t *testingTransaction) TestDelete(key []byte) error {
+	return t.Delete(key, t.wo)
+}
+
+func (t *testingTransaction) TestGet(key []byte) (value []byte, err error) {
+	return t.Get(key, t.ro)
+}
+
+func (t *testingTransaction) TestHas(key []byte) (ret bool, err error) {
+	return t.Has(key, t.ro)
+}
+
+func (t *testingTransaction) TestNewIterator(slice *util.Range) iterator.Iterator {
+	return t.NewIterator(slice, t.ro)
+}
+
+func (t *testingTransaction) TestClose() {}
