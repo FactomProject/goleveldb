@@ -1,11 +1,11 @@
 This is an implementation of the [LevelDB key/value database](http:code.google.com/p/leveldb) in the [Go programming language](http:golang.org).
 
-[![Build Status](https://travis-ci.org/syndtr/goleveldb.png?branch=master)](https://travis-ci.org/syndtr/goleveldb)
+[![Build Status](https://travis-ci.org/FactomProject/goleveldb.png?branch=master)](https://travis-ci.org/FactomProject/goleveldb)
 
 Installation
 -----------
 
-	go get github.com/syndtr/goleveldb/leveldb
+	go get github.com/FactomProject/goleveldb/leveldb
 
 Requirements
 -----------
